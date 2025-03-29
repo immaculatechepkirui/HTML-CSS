@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color:mediumslateblue;
+          display: flex;
+          align-items: center;
+          width: 70%;
+          margin: 100px 50px 50px 50px;
+        }
+    
+        .form-container {
+          background:plum;
+          padding: 2rem;
+          border-radius: 8px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          margin: 20px 0px 30px 10px;
+          width: 300%;
+          text-align: center;
+          
+          
+        }
+    
+        .form-container h2 {
+          margin-bottom: 1.5rem;
+          color: #2c3e50;
+        }
+    
+        .form-container input {
+          width: 100%;
+          padding: 0.8rem;
+          margin: 0.5rem 0;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          font-size: 1rem;
+          box-sizing: border-box;
+        }
+    
+        .form-container input:focus {
+          border-color: #2c3e50;
+          outline: none;
+        }
+    
+        .form-container button {
+          width: 100%;
+          padding: 0.8rem;
+          margin-top: 1rem;
+          background-color: purple;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          font-size: 1rem;
+          cursor: pointer;
+        }
+    
+        .form-container button:hover {
+          background-color: #34495e;
+        }
+    
+        .form-container p {
+          margin-top: 1rem;
+          color: #555;
+        }
+    
+        .form-container a {
+          color: #2c3e50;
+          text-decoration: none;
+        }
+    
+        .form-container a:hover {
+          text-decoration: underline;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="form-container">
+        <h2>Sign Up to Kira-fit</h2>
+        <p> Welcome, please enter your details</p>
+        <form action="login.html"
+        id="signupForm">
+          <input type="text" placeholder="Email" required>
+          <input type="password" placeholder="password" required>
+          <input type="confirmpassword" placeholder="Confirm password" minlength="8" required>
+          <button type="submit">Sign Up</button>
+          <p>Or continue with</p>
+          <div class="social-login">
+            <a href="#" class="social-link signup-button">
+                <img src="GOOGLE.png" alt="Google" class="icon">Google
+            </a>
+            <a href="#" class="social-link signup-button">
+                <img src="FACEBOOK.png" alt="Facebook" class="icon">Facebook
+            </a>
+           
+
+        </div>
+        </form>
+       
+      </div>
+      <img src="photo.avif" alt="logo" style="float: right;width:300px; height: 300px; margin: 60px 20px 70px 10px; ">
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+    </body>
+    </html>
